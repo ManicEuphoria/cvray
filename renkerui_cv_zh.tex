@@ -1,160 +1,78 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+\documentclass[11pt, a4paper,sans]{moderncv}     % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{CTEX}
 
-
-\documentclass[UTF8, 12pt, a4paper,sans]{moderncv}       % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
-\pagenumbering{gobble}
-% moderncv themes
-
-\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{purple}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-% character encoding
-%\usepackage[utf8]{inputenc}
+\moderncvstyle{banking}
+\moderncvcolor{purple}
+\nopagenumbers{}
 
 % if you are not using xelatex ou lualatex, replace by the encoding you are using
-\usepackage{CJKutf8}                              % if you need to use CJK to typeset your moderncv_ray in Chinese, Japanese or Korean
+\usepackage[utf8]{inputenc}
 
-
-% adjust the page margins
-%\usepackage[scale=0.75]{geometry}
 \usepackage{geometry}
-\geometry{left=1.7cm,right=1.8cm,top=1.5cm,bottom=1.5cm}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\geometry{left=1.7cm,right=1.8cm,top=1cm,bottom=1cm}
 
+\usepackage{import}
 
+\name{\yahei 任科叡}{}
+\title{\yahei \LARGE Ruby开发工程师}
 
-% personal data
-
-
-\name{任科叡}
-\title{Ruby开发工程师}
-
-
-
-%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+86 159-0814-3240}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{weirdhoney.mizar@gmail.com}                               % optional, remove / comment the line if not wanted
+\phone[mobile]{+86 15908143240}
+\email{weirdhoney.mizar@gmail.com}
 \social[github]{ManicEuphoria}
-%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
-%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
-% bibliography adjustements (only useful if you make citations in your moderncv_ray, or print a list of publications using BibTeX)
-%   to show numerical labels in the bibliography (default is to show no labels)
-\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
-%   to redefine the bibliography heading string ("Publications")
-%\renewcommand{\refname}{Articles}
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
-    %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your moderncv_ray in Chinese using CJK
-    %-----       moderncv_ray       ---------------------------------------------------------
+
     \makecvtitle
     \vspace{-38pt}
 
-    \section{教育背景}
+    \section{\yahei 教育背景}
     \begin{itemize}
-        \item{\textbf{武汉大学}, {武汉, 中国} \hfill\textbf{09/2011 - 07/2015}}
-    \end{itemize}
-
-    \begin{itemize}
-        \item{\textit{工学学士学士学位, 国际软件学院}}
+        \item{\yahei 工学学士，软件工程，\textbf{武汉大学}\hfill 武汉，\textbf{09/2011 -- 07/2015}}
     \end{itemize}
 
     \vspace{-8pt}
 
-
-    \section{工作经历}
+    \section{\yahei 工作经历}
 
     \begin{itemize}
 
-        \item{\textbf{Big Bang Games}, {成都, 中国} \hfill\textbf{10/2018 - 05/2019}}
-        \item{\textit{初级Ruby服务器端工程师}}
-        \vspace{2pt}
+        \item{\yahei \textbf{Big Bang Games} \hfill 成都，\textbf{10/2018 -- 05/2019}}
+
         \begin{itemize}
-            \item {\medium 负责Panda Slots游戏服务器端的开发及测试。Panda Slots是一款拥有数十万用户的在线赌场类模拟游戏，上架于Google Play及AppStore, 主要玩家分布于港澳台、东南亚、北美及澳洲}
-            \vspace{2pt}
-            \item {\medium 该项目对外致力于做出同行业内能比肩世界大厂的赌场类游戏，对内致力于写出简洁的、可复用的游戏框架，}
-            \vspace{2pt}
-            \item {\medium 基于Ruby on Rails框架，对游戏新特性需求进行分析，设计数据库及模型，以TDD的方法驱动后续功能的开发，并在小组内进行code review，在进一步完善代码后提交成品}
-            \vspace{2pt}
-            \item {\medium 在职期间开发了赛事竞猜游戏、多人房间内互动的框架、每日转轮游戏、免费金币领取等功能，参与了AppServer端框架的重构，极大简化了之前项目的代码}
+            \item{\yahei \textbf{Ruby服务器端工程师}\\
+            1.负责Panda Slots服务器端的开发工作，Panda Slots是一款赌场类模拟手游，项目致力于开发出比肩业内大厂的赌场游戏 2.项目基于Ruby on Rails，数据库基于PostgreSQL，使用RSpec作为测试框架，项目后期开发基于Docker环境 3.主要负责对游戏新特性的需求分析，在编写测试为前提下驱动对应功能模块的开发，后续在小组内进行统一的code review并给予反馈完善并提交代码，工作期间经历了从小功能的开发到整个大模块的设计，中间遇到棘手的问题诸如修改已存在的数据库字段名导致关联模型失效等问题，通过深刻理解ActiveRecord与数据库之间关系后得以解决 4. 在职期间我开发出了赛事竞猜游戏、机台分级功能、房间多人游戏功能、每日转轮游戏和每日领取免费金币等功能，学会了以TDD为驱动进行开发，理解了如何使用OOD编写及重构代码}
         \end{itemize}
+        \vspace{6pt}
 
+        \item{\yahei \textbf{极验验证} \hfill 武汉，\textbf{12/2015 -- 07/2018}}
 
-        \vspace{8pt}
-
-
-        \item{\textbf{极验验证}, {武汉, 中国} \hfill\textbf{12/2015 - 07/2018}}
-        \subitem{\textit{平安科技私有化验证管理平台开发}}
         \begin{itemize}
-            \item { \medium 平安科技对接极验验证产品的针对验证数据及功能的私有化管理平台}
-            \item { \medium 负责后台框架选型、需求分析、任务制定及功能模块的开发工作}
-            \item { \medium 基于Django框架，完成框架搭建及基础功能模块开发}
-            \item { \medium 在职期间完成第一期功能模块的开发及本地测试工作，完成对平安科技UM用户系统的对接工作}
-        \end{itemize}
-
-        \subitem{\textit{Geetest用户管理平台开发}}
-        \begin{itemize}
-            \item { \medium 为日益增长的企业及个人用户定制的验证管理及数据查看平台}
-            \item { \medium 负责框架的搭建、数据库设计及上层业务逻辑的实现及项目的部署工作}
-            \item { \medium 基于Flask框架对功能模块进行开发，对数据部门验证数据分析接口在项目内的开发和集成，第三方接口（支付）在项目内的集成}
-            \item { \medium 在职期间经历了项目由Tornado框架到Flask框架的迁移重构，完成了对初期一万左右用户到后期二十五万用户的支持}
-        \end{itemize}
-
-        \subitem{\textit{Geetest内部管理平台开发}}
-        \begin{itemize}
-            \item { \medium 基于日益庞大的验证数据及不断增长的用户而开发的对验证数据统计分析及用户管理的平台}
-            \item { \medium 负责功能模块开发及数据处理脚本的实现}
-            \item { \medium 基于Tornado框架完成功能开发，编写定时脚本获取数据分析报表}
-            \item { \medium 在职期间开发的功能完成了对产品、运营、市场部门的有力支持工作}
+            \item{\yahei \textbf{Python后端工程师}\\
+            1. 负责极验验证Web端面向用户及内部员工的管理平台的后端开发、集成与部署工作 2. 工作期间的三个项目分别基于Django、Tornado与Flask框架，数据库基于MongoDB及MySQL，以Redis作为缓存方案 3. 前期工作负责面向内部平台的验证数据与用户的管理功能开发；中期负责面向用户平台的重构、模块开发及部署工作；后期负责新项目框架搭建、任务分配、合作开发及帮助指导新人工作，期间对接平安UM账户体系是一个巨大的挑战，基于对方无远程可接入的公网的前提下在本地黑盒开发对接模块后出差对方总部现场入网调试 4. 在职期间经历了客户量从上万到25万的用户管理平台的重构与迭代，主导平安科技对接极验验证私有化管理后台的开发工作；为内部各部门提供了每天数以亿计验证数据的各维度分析报表及各种用户在运营、商务方面的数据分析功能}
         \end{itemize}
 
     \end{itemize}
     \vspace{-8pt}
 
-
-
-    \section{技能树}
+    \section{\yahei 技能树}
     \begin{itemize}
-        \item{\textbf{编程语言:} {熟悉 \textit{Ruby}, \textit{Python}%
-        \item{\textbf{语言框架:} {熟悉 \textit{Ruby on Rails}, \textit{Flask}, 了解 \textit{Django}, \textit{Tornado}}}%
-        \item{\textbf{操作系统:} {熟悉 \textit{CentOS}, \textit{Ubuntu}, \textit{MacOS}}}%
-        \item{\textbf{数据库:} {了解 \textit{PostgreSQL}，\textit{MySQL}，\textit{MongoDB}，\textit{Redis}}}%
-        \item{\textbf{工具:} {掌握 \textit{Git}，\textit{Markdown} 以及 \textit{Vim}，了解\textit{Docker}}}%
-        \item{\textbf{设计模式:}{了解 \textit{RESTful设计}，\textit{测试驱动开发}和\textit{面向对象设计}}}%
-        \item{ \textbf{算法:} {了解基本的数据结构及算法}}%
-        \item{\textbf{外语}: {CET 4/6， 良好的英语读写能力及满足日常交流的口语能力，可无字幕上Youtube，查看各类英文文档和资料} }
+        \item{\yahei \textbf{编程语言:} 熟悉Ruby、Python}
+        \item{\yahei \textbf{语言框架:} 熟悉Ruby on Rails、Flask，了解Django、Tornado}
+        \item{\yahei \textbf{操作系统:} 熟悉CentOS、Ubuntu、MacOS}
+        \item{\yahei \textbf{数据库:} 了解PostgreSQL、MySQL、MongoDB、Redis}
+        \item{\yahei \textbf{工具:} 掌握Git、Markdown、Vim，了解Docker}
+        \item{\yahei \textbf{设计模式:} 了解RESTful、TDD、OOD}
+        \item{\yahei \textbf{算法:} 了解基本的数据结构及算法}
+        \item{\yahei \textbf{外语:} CET 4/6，良好的英文读写，无障碍看Youtube英语视频及满足日常交流的口语能力}
     \end{itemize}
-
     \vspace{-8pt}
-    \section{其他信息}
-    \subsection{自我评价}
+
+    \section{\yahei 自我评价}
 
     \begin{itemize}
-        \item{\medium 一个严格遵守各种编码规范，致力于写出干净的、可移植的、可复用的代码的洁癖者}
-        \item{\medium 一个以目标为驱动， 具有快速学习能力的人。日常解决问题主要依赖于\textit{Google}、\textit{Github}、\textit{StackOverflow} 及各种API文档, 同时热衷于各种技术论坛及博客}
-        \item{\medium 业余生活热衷于吉他的演奏和弹唱，和跑步、篮球等运动，有稳定的阅读习惯。拥有较强的沟通能力及团队合作能力}
+        \item{\yahei 在高效完成本职工作同时致力于写出整洁、可移植和可复用程序的代码洁癖者}
+        \item{\yahei 一个以解决问题为驱动力，能快速学习新技能的人。日常解决问题主要依赖于Google、Github、Stack Overflow及各种API文档和技术资料, 同时热衷于各种英语技术论坛及博客}
+        \item{\yahei 业余生活热衷于读书、吉他弹唱、跑步、篮球等。有较强的沟通能力及团队合作能力}
     \end{itemize}
 
 \end{document}
-
-
-%% end of file `template.tex'.
