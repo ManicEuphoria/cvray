@@ -1,2 +1,6 @@
 .idea/
 test.*
+*.aux
+*.log
+*.out
+*.gz
