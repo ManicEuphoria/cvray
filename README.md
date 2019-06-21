@@ -1,2 +1,4 @@
 # cvray
-use template moderncv for my own resume.
+
+[中文版](./renkerui_cv_zh.pdf)
+[English Version](./renkerui_cv_en.pdf)
