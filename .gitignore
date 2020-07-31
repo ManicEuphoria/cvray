@@ -4,3 +4,4 @@ test.*
 *.log
 *.out
 *.gz
+.DS_Store
